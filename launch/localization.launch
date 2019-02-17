@@ -1,0 +1,4 @@
+<launch>
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find lab4)/rviz/grid.rviz"/>
+	<node name="localization" pkg="lab4" type="localization.py" args="$(find lab4)/bag/grid.bag $(find lab4)/scripts/trajectory.txt" output="screen"/>
+</launch>
